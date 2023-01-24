@@ -17,3 +17,15 @@ jobs:
       with:
            name: my-code-artifact
            path: HelloWorld.java
+           
+    - name: Login to JFrog 🐸  
+      uses: docker/login-action@v1
+      with:
+          registry: bwapp.jfrog.io
+          username: sanket.bodake@isteer.com
+          password: Sank@2197
+          
+    - name: Upload to jfrog
+      uses: actions/upload-artifact@v3
+            name:java_app$(date +%s)
+            path:HelloWorld.java
