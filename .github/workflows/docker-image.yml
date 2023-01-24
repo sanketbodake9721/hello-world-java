@@ -18,11 +18,7 @@ jobs:
            name: my-code-artifact
            path: HelloWorld.java
            
-    - name: Login to JFrog 🐸  
-      uses: docker/login-action@v1
-      with:
-          registry: bwapp.jfrog.io
-          username: sanket.bodake@isteer.com
-          password: Sank@2197
-          run: curl -usanket.bodake@isteer.com:cmVmdGtuOjAxOjE3MDYwODAxOTk6Q3lVQVFYOER0SDZBNHNRNUdQejlSdEFkVHM2 -T HelloWorld.java "https://bwapp.jfrog.io/artifactory/example-repo-local/HelloWorld.java>"        
+    - name: REST API with curl
+      run: |
+            curl -usanket.bodake@isteer.com:cmVmdGtuOjAxOjE3MDYwODA1MDE6aGg1TmE1V0NtUkxJOFphSkxtZWhxeEFpbTZF -T HelloWorld.java "https://bwapp.jfrog.io/artifactory/example-repo-local/HelloWorld.java"    
   
