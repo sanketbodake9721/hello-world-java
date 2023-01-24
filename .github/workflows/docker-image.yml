@@ -26,6 +26,6 @@ jobs:
           password: Sank@2197
           
     - name: Upload to jfrog
-      uses: actions/upload-artifact@v3
-            name:java_app$(date +%s)
+      uses: actions/upload-artifact@v2
+            name:java_app
             path:HelloWorld.java
