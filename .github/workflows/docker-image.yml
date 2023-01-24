@@ -24,8 +24,5 @@ jobs:
           registry: bwapp.jfrog.io
           username: sanket.bodake@isteer.com
           password: Sank@2197
-          
-    - name: Upload to jfrog
-      uses: actions/upload-artifact@v2
-            name:java_app
-            path:HelloWorld.java
+          run: curl -usanket.bodake@isteer.com:cmVmdGtuOjAxOjE3MDYwODAxOTk6Q3lVQVFYOER0SDZBNHNRNUdQejlSdEFkVHM2 -T HelloWorld.java "https://bwapp.jfrog.io/artifactory/example-repo-local/HelloWorld.java>"        
+  
