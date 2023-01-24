@@ -20,5 +20,5 @@ jobs:
            
     - name: REST API with curl
       run: |
-            curl -usanket.bodake@isteer.com:cmVmdGtuOjAxOjE3MDYwODA1MDE6aGg1TmE1V0NtUkxJOFphSkxtZWhxeEFpbTZF -T HelloWorld.java "https://bwapp.jfrog.io/artifactory/example-repo-local/HelloWorld.java"    
+            curl -usanket.bodake@isteer.com:cmVmdGtuOjAxOjE3MDYwODA1MDE6aGg1TmE1V0NtUkxJOFphSkxtZWhxeEFpbTZF -T HelloWorld.java "https://bwapp.jfrog.io/artifactory/example-repo-local/HelloWorld.java$(date +%s)"    
   
